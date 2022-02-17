@@ -22,13 +22,13 @@ describe('showMovies', () => {
 
     describe('ticketPrice', () => {
 
-        it('should check if the current projection type IS present', () => {
+        it('should check if the current projection type IS Premiere', () => {
             assert.equal(cinema.ticketPrice('Premiere'), '12.00');
         });
-        it('should check if the current projection type IS present', () => {
+        it('should check if the current projection type IS  Normal', () => {
             assert.equal(cinema.ticketPrice('Normal'), '7.50');
         });
-        it('should check if the current projection type IS present', () => {
+        it('should check if the current projection type IS Discount', () => {
             assert.equal(cinema.ticketPrice('Discount'), '5.50');
         });
         it('should check if the current projection type is NOT present', () => {
