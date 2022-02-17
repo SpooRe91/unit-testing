@@ -1,5 +1,5 @@
-let { assert } = require('chai');
-let mathEnforcer = require('..04.mathEnforcer');
+let { assert, expect } = require('chai');
+let mathEnforcer = require('../04.mathEnforcer');
 
 describe('App', function () {
     describe('addFive', function () {
@@ -73,5 +73,4 @@ describe('App', function () {
             assert.closeTo(mathEnforcer.sum(5.55, 5.55), 11.1, 0.01);
         });
     });
-
 })

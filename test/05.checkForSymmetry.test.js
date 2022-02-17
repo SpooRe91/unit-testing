@@ -1,5 +1,5 @@
 const { expect, assert } = require('chai');
-const isSymmetric = require('./CheckForSymmetry');
+const isSymmetric = require('../05.checkForSymmetry');
 
 describe('App', function () {
     it('Should return false if argument is not an Array', function () {

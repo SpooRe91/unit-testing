@@ -1,5 +1,5 @@
 const { expect, assert } = require('chai');
-const rgbToHexColor = require('./RGBtoHex');
+const rgbToHexColor = require('../06.RGBtoHex');
 
 describe('App', function () {
     it('Should return undefined if any of the 3 inputs are not numbers', function () {

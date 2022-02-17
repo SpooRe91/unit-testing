@@ -1,5 +1,5 @@
 const { expect, assert } = require('chai');
-const createCalculator = require('./AddSubtract');
+const createCalculator = require('../07.addSubtract');
 
 describe('App', function () {
     it('Should return an object', function() {
