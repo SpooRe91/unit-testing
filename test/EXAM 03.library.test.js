@@ -1,3 +1,6 @@
+const { expect, assert } = require('chai');
+const library = require('../EXAM 03.library');
+
 describe("Test", () => {
     describe("A function that accepts a string and a number: ", () => {
         it("Checks if the first parameter is not a string", () => {
