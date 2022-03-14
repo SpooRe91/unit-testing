@@ -25,11 +25,11 @@ let messages = {
     }
 };
 
-describe('App: End-to-end testing', function () {
+describe('Testing end to end', function () {
     this.timeout(4000);
 
     before(async () => {
-        browser = await chromium.launch({ headless: true});
+        browser = await chromium.launch({ headless: true });
     });
     after(async () => {
         await browser.close();
@@ -40,7 +40,7 @@ describe('App: End-to-end testing', function () {
     afterEach(async () => {
         await page.close();
     });
-
+    //THIS TESTS THE REFRESH AND THE APPEARANCE OF MESSAGES
     it('Should refresh the section and check the messages', async () => {
         await page.goto(host);
 
@@ -59,7 +59,7 @@ describe('App: End-to-end testing', function () {
 
         assert.deepEqual(currentMessages, testMessages);
     });
-
+    //THIS TESTS THE SUCCESSFULL SENDING OF A MESSAGE
     it('Should successfully send a message', async () => {
         await page.goto(host);
 

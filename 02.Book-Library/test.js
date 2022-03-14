@@ -87,7 +87,7 @@ describe('Testing end to end', function () {
         await page.click('text=LOAD ALL BOOKS');
 
         let location = await page.locator('tbody tr td:nth-child(1)');  // Gets all titles
-        const titles = await location.evaluateAll((section) => section.map(s => s.textContent.trim()));
+        const titles = await location.evaluateAll() ((section) => section.map(s => s.textContent.trim()));
 
         assert.equal(titles.length - 1, titles.length - 1);
     });
