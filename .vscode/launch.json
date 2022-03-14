@@ -29,7 +29,8 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\${file}.test.js"
+            "program": "${workspaceFolder}"
         }
     ]
 }
+// ${file}.test.js was on line 32
