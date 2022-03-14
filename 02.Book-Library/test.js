@@ -9,7 +9,7 @@ describe('Testing end to end', function () {
     this.timeout(6000);
 
     before(async () => {
-        browser = await chromium.launch({ headless: false, slowMo: 500 });
+        browser = await chromium.launch({ headless: true, slowMo: 500 });
     });
     after(async () => {
         await browser.close();
@@ -20,7 +20,7 @@ describe('Testing end to end', function () {
     afterEach(async () => {
         await page.close();
     });
-//HERE WE CHECK IF THE BOOKS ARE LOADED SUCCESSFULLY!
+    //HERE WE CHECK IF THE BOOKS ARE LOADED SUCCESSFULLY!
     it('Should load succsessfully', async () => {
         await page.goto(baseUrl);
 
@@ -39,7 +39,7 @@ describe('Testing end to end', function () {
         assert.include(content, 'Edit');
         assert.include(content, 'Delete');
     });
-//HERE WE CHCEK IF WE CAN SUBMIT A NEW BOOK SUCCESSFULLY
+    //HERE WE CHCEK IF WE CAN SUBMIT A NEW BOOK SUCCESSFULLY
     it('Should submit successfully', async () => {
         await page.goto(baseUrl);
 
@@ -55,7 +55,7 @@ describe('Testing end to end', function () {
         assert.equal(bookName, 'Witcher');
         assert.equal(authorName, 'Andrej Sapkowski');
     });
-//HERE WE CHCEK IF WE CAN EDIT A BOOK SUCCESSFULLY
+    //HERE WE CHCEK IF WE CAN EDIT A BOOK SUCCESSFULLY
     it('Should edit properly', async () => {
         await page.goto(baseUrl);
 
@@ -73,7 +73,7 @@ describe('Testing end to end', function () {
         assert.equal(bookName, 'C# Web');
         assert.equal(authorName, 'Svetlin Nakov');
     });
-//HERE WE CHCEK IF WE CAN DELETE A BOOK SUCCESSFULLY
+    //HERE WE CHCEK IF WE CAN DELETE A BOOK SUCCESSFULLY
     it('Should delete a book', async () => {
         await page.goto(baseUrl);
         await page.click('text=LOAD ALL BOOKS');
@@ -87,7 +87,7 @@ describe('Testing end to end', function () {
         await page.click('text=LOAD ALL BOOKS');
 
         let location = await page.locator('tbody tr td:nth-child(1)');  // Gets all titles
-        const titles = await location.evaluateAll() ((section) => section.map(s => s.textContent.trim()));
+        const titles = await location.evaluateAll((section) => section.map(s => s.textContent.trim()));
 
         assert.equal(titles.length - 1, titles.length - 1);
     });
