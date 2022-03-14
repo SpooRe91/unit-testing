@@ -44,7 +44,7 @@ async function createBook(event) {
     }
 
     await request('http://localhost:3030/jsonstore/collections/books', {
-        method: 'post',
+        method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(book)
     });
@@ -80,7 +80,7 @@ async function updateBook(event) {
 // function for deleting an existing book using ID
 async function deleteBook(id) {
     await request('http://localhost:3030/jsonstore/collections/books/' + id, {
-        method: 'delete',
+        method: 'DELETE',
     });
 }
 

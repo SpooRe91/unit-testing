@@ -25,7 +25,7 @@ async function getMessages() {
 
 async function sendMessage(message) {
     const response = await fetch('http://localhost:3030/jsonstore/messenger', {
-        method: 'post',
+        method: 'POST',
         headers: { 'Content-Type': 'application/json'},
         body: JSON.stringify(message)
     });
