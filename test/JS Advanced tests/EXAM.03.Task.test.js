@@ -1,6 +1,6 @@
 const { expect, assert } = require('chai');
-const flowerShop = require('../FINALEXAM.flowerShop');
-const taskName = require('../FINALEXAM.flowerShop');
+const flowerShop = require('../JS Advanced tests/FINALEXAM.flowerShop.js');
+const taskName = require('../JS Advanced tests/FINALEXAM.flowerShop.js');
 
 describe('testing the functionality', () => {
 

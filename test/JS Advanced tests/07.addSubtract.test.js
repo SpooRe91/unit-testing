@@ -1,8 +1,8 @@
 const { expect, assert } = require('chai');
-const createCalculator = require('../07.addSubtract');
+const createCalculator = require('../JS Advanced tests/07.addSubtract.js');
 
 describe('App', function () {
-    it('Should return an object', function() {
+    it('Should return an object', function () {
         assert.typeOf(createCalculator(), 'object');
     })
 

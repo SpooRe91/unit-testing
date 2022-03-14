@@ -1,5 +1,5 @@
 const { expect, assert } = require('chai');
-const cinema = require('../EXAM.03.cinema');
+const cinema = require('../JS Advanced tests/EXAM.03.cinema.js');
 
 describe('showMovies', () => {
 

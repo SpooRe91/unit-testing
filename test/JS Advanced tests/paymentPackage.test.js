@@ -1,5 +1,5 @@
 let { assert } = require('chai');
-let PaymentPackage = require('../paymentPackage');
+let PaymentPackage = require('../JS Advanced tests/paymentPackage.js');
 
 describe("App", function () {
     describe("Name property", function () {

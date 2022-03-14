@@ -1,6 +1,6 @@
 
 const expect = require('chai').expect;
-const lookupChar = require('../03.charLookup.js');
+const lookupChar = require('../JS Advanced tests/03.charLookup.js');
 
 describe("look up char", () => {
     it('should return undefined when the first input is not a string', () => {

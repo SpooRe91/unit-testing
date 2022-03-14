@@ -1,6 +1,6 @@
 const { expect, assert } = require('chai');
-const companyAdministration = require('../EXAM.03.companyAdministration');
-const dealership = require('../EXAM.03.companyAdministration');
+const companyAdministration = require('../JS Advanced tests/EXAM.03.companyAdministration.js');
+const dealership = require('../JS Advanced tests/EXAM.03.companyAdministration.js');
 
 describe('Testing compnayAdministration', () => {
 

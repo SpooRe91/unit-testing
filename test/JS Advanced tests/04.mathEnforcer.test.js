@@ -1,5 +1,5 @@
 let { assert, expect } = require('chai');
-let mathEnforcer = require('../04.mathEnforcer');
+let mathEnforcer = require('../JS Advanced tests/04.mathEnforcer.js');
 
 describe('App', function () {
     describe('addFive', function () {

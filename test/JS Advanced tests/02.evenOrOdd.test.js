@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const isOddOrEven = require('../02.evenOrOdd.js');
+const isOddOrEven = require('../JS Advanced tests/02.evenOrOdd.js');
 
 describe('isOddOrEven checks multiple things', () => {
     //arrange phase

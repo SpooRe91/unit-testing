@@ -1,5 +1,5 @@
 const { expect, assert } = require('chai');
-const sum = require('../01.sumNumbers.js');
+const sum = require('../JS Advanced tests/01.sumNumbers.js');
 
 describe('Sub - sum calculator', () => {
     it('It must return the sum of the numbers in the array!', () => {
